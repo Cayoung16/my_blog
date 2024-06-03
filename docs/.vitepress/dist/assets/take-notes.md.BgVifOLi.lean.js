@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as t,a1 as s}from"./chunks/framework.DTR-fORK.js";const k=JSON.parse('{"title":"页面开发","description":"","frontmatter":{},"headers":[],"relativePath":"take-notes.md","filePath":"take-notes.md"}'),o={name:"take-notes.md"},n=s("",6),d=[n];function c(p,i,r,_,l,h){return t(),a("div",null,d)}const u=e(o,[["render",c]]);export{k as __pageData,u as default};
