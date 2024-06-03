@@ -7,7 +7,7 @@ hero:
   tagline: 笨鸟先飞，持续学习，不断进步
   actions:
     - theme: brand
-      text: 学习笔记
+      text: 更多
       link: /build-course
     # - theme: alt
     #   text: API Examples
