@@ -39,7 +39,9 @@ export default defineConfig({
             text: "TypeScript",
             collapsed: true,
             items: [
-              { text: "TypeScript基础", link: "/src/views/typescript/basic" },
+              { text: "邂逅Typescript", link: "/src/views/typescript/basic" },
+              { text: "常见类型", link: "/src/views/typescript/common-types" },
+              { text: "进阶", link: "/src/views/typescript/advanced" },
             ],
           },
         ],

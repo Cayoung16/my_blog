@@ -50,4 +50,34 @@ Property 'location' does not exist type '{ name: string; age: number; }'
 npm install -g typescript
 ```
 
-:tada:
+接下来我们新建一个文件夹并在目录下创建一个 demo.ts 文件并写入 `ts` 代码：
+
+```ts
+let message: string = "hello world";
+```
+
+代码完成后我们在打开终端命令行，输入命令利用 Typescript 安装时自带的 `tsc` 包来编译 ts 文件：
+
+```shell
+npx tsc .\demo.ts
+```
+
+此时，控制台并不会输出什么，但是在`demo.ts`文件同级目录下出现了一个`demo.js`，我们打开 demo.js 发现里面的代码变成了：
+
+```ts
+var message = "hello world";
+```
+
+这是因为 Typescript 会把高版本 ECMAScript 的代码重写为类似 ECMAScript3 或者 ECMAScript5 （也就是 ES3 或者 ES5）这样较低版本的代码。
+
+### 严格性
+
+在`tsconfig.json`文件中可以利用设置`"strict:true"`用以一次性开启全部严格性设置.
+
+#### noImplicitAny
+
+启用 `noImplicitAny` 配置项，在遇到被隐式推断为 `any` 类型的变量时就会抛出一个错误。
+
+#### strictNullChecks
+
+`strictNullChecks` 配置项让处理 `null` 和 `undefined` 的过程更加明显，让我们不用担心自己是否忘记处理 `null` 和 `undefined。`
